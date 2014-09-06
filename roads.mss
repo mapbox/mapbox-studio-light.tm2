@@ -13,7 +13,7 @@
 #road[zoom<11],
 #tunnel[zoom<11],
 #bridge[zoom<11] {
-    line-color: @white;
+    line-color: @road;
     line-width: 0.5;
   [class='motorway'] { line-width: 1;}
 }
@@ -22,7 +22,7 @@
 #tunnel::fill[zoom>=11],
 #bridge::fill[zoom>=11] {
   ['mapnik::geometry_type'=2] {
-    line-color: @white;
+    line-color: @road;
     line-width: 0.5;
     [zoom>=15] { line-width: 1; } 
     [class='path'] { line-dasharray: 2,2;}

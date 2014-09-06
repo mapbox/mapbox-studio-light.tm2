@@ -2,7 +2,7 @@
 #country_label[zoom>=3] {
   text-name: @name;
   text-face-name: @sans_bold;
-  text-fill: @darkgray;
+  text-fill: @text4;
   text-size: 12;
   text-halo-fill: @land;
   text-halo-radius: 1;
@@ -27,11 +27,11 @@
 
   // At zoom level 9, major cities replace countries
   // as most emphasized feature
-  [zoom>=9] { text-fill: @lightgray;}
+  [zoom>=9] { text-fill: @text2;}
 }
 
 #country_label_line { 
-  line-color: @gray;
+  line-color: @text3;
   line-dasharray: 3,3;
   line-width: 1;
 }
@@ -40,7 +40,7 @@
 #state_label { 
   text-name: @name;
   text-face-name: @sans;
-  text-fill: @lightgray;
+  text-fill: @text2;
   text-size: 12;
   text-halo-fill: @land;
   text-halo-radius: 1;
@@ -53,7 +53,7 @@
   shield-name: @name;
   shield-face-name: @sans;
   shield-size: 14;
-  shield-fill: @gray;
+  shield-fill: @text3;
   shield-halo-fill: @land;
   shield-halo-radius: 1;
   shield-unlock-image: true;
@@ -81,7 +81,7 @@
   shield-name: @name;
   shield-face-name: @sans;
   shield-size: 12;
-  shield-fill: @gray;
+  shield-fill: @text3;
   shield-halo-fill: @land;
   shield-halo-radius: 1;
   shield-unlock-image: true;
@@ -112,13 +112,13 @@
   text-name: @name;
   text-face-name: @sans;
   text-size: 16;
-  text-fill: @gray;
+  text-fill: @text3;
   text-halo-fill: @land;
   text-halo-radius: 1;
   text-min-distance: 4;
   text-wrap-width: 80;
   [scalerank<=3] { 
-    text-fill: @darkgray;
+    text-fill: @text4;
     text-size: 20;
   } 
 }
@@ -133,15 +133,14 @@
   text-name: @name;
   text-face-name: @sans;
   text-size: 14;
-  text-fill: @gray;
+  text-fill: @text3;
   text-halo-fill: @land;
   text-halo-radius: 2;
   text-min-distance: 4;
   text-wrap-width: 80;
-  text-avoid-edges: true;
   [zoom>=12] { 
     text-size: 16;
-    text-fill: @darkgray;
+    text-fill: @text3;
   }
 }
 
@@ -153,15 +152,15 @@
   text-name: @name;
   text-face-name: @sans;
   text-size: 14;
-  text-fill: @gray;
+  text-fill: @text3;
   text-halo-fill: @land;
   text-halo-radius: 2;
   text-min-distance: 4;
   text-wrap-width: 60;
-  text-avoid-edges: true;
 }
 
 // Road labels
+#road_label[len>2000][zoom>=12],
 #road_label[len>1000][zoom>=15] { 
   text-placement: line;
   text-transform: uppercase;
@@ -171,7 +170,7 @@
   text-min-distance: 100;
   text-halo-fill: @land;
   text-halo-radius: 1;
-  text-fill: mix(@gray,@lightgray,50);
+  text-fill: mix(@text3,@text2,50);
   [zoom>=17] { text-size: 11;}
 }
 
@@ -179,7 +178,7 @@
 #marine_label { 
   text-name: @name;
   text-face-name: @sans_bold;
-  text-fill: mix(@lightgray,@white,25);
+  text-fill: mix(@text2,@text1,25);
   text-size: 12;
   text-halo-fill: @water;
   text-halo-radius: 1;
@@ -199,7 +198,7 @@
   [zoom>=17] {
     text-name: @name;
     text-face-name: @sans_bold;
-    text-fill: @white;
+    text-fill: @text1;
     text-size: 12;
     text-halo-fill: @water;
     text-halo-radius: 1;
@@ -214,7 +213,7 @@
 #waterway_label[type='stream'][zoom>=15] { 
   text-name: @name;
   text-face-name: @sans_bold;
-  text-fill: @white;
+  text-fill: @text1;
   text-min-distance: 100;
   text-size: 12;
   text-halo-fill: @water;
@@ -226,17 +225,20 @@
 
 // Place labels
 #poi_label[maki='park'],
+#poi_label[maki='airport'],
+#poi_label[maki='airfield'],
+#poi_label[maki='rail'],
 #poi_label[maki='school'],
 #poi_label[scalerank='hospital'] { 
   text-face-name: @sans_bold;
-  text-avoid-edges: true;
+  text-allow-overlap: false;
   text-name: @name;
-  text-size: 10;
+  text-size: 9;
   text-line-spacing: -2;
   text-min-distance: 50;
   text-wrap-width: 60;
   text-halo-fill: @land;
   text-halo-radius: 1;
-  text-fill: @gray;
-  [zoom>12][scalerank<3] { text-size: 12;}
+  text-fill: @text3;
+  [zoom>14][scalerank<2] { text-size: 9;}
 }
