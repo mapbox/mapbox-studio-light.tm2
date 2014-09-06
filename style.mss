@@ -5,14 +5,13 @@
 @sans: 'Arial Unicode MS Regular';
 @sans_bold: 'Arial Unicode MS Bold';
 
-// Color palette //
-
 /*
-This map is designed to be easily recolored by adjusting the color
+This style is designed to be easily recolored by adjusting the color
 variables below. For predicatable feature relationships,
 maintain or invert existing value (light to dark) scale.
 */
 
+// Color palette //
 @road:  #fff;
 @land:  #eee;
 
