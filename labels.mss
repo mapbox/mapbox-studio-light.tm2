@@ -52,7 +52,7 @@
   shield-file: url("star.svg");
   shield-name: @name;
   shield-face-name: @sans;
-  shield-size: 12;
+  shield-size: 14;
   shield-fill: @gray;
   shield-halo-fill: @land;
   shield-halo-radius: 1;
@@ -68,6 +68,8 @@
   [ldir='SE'] { shield-text-dx: 3; shield-text-dy: 3; }
   [ldir='SW'] { shield-text-dx: -3; shield-text-dy: 3; }
   [ldir='NW'] { shield-text-dx: -3; shield-text-dy: -3; }
+
+  [zoom>=6] { shield-size: 16; } 
 }
 
 // Display low zoom cities alongside points.

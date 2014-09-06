@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">0.1373291015625,51.53523137707124,11</Parameter>
+  <Parameter name="center">0.2362060546875,51.5429188223739,7</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -3183,11 +3183,6 @@
     <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#888888" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <Filter>([type] = 'hamlet') and ([localrank] &lt;= 2)</Filter>
-    <TextSymbolizer size="16" fill="#666666" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <Filter>([type] = 'village') and ([localrank] &lt;= 2)</Filter>
     <TextSymbolizer size="16" fill="#666666" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
@@ -3202,6 +3197,11 @@
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([type] = 'town') and ([localrank] &lt;= 2)</Filter>
     <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#888888" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'hamlet') and ([localrank] &lt;= 2)</Filter>
+    <TextSymbolizer size="16" fill="#666666" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -3251,49 +3251,103 @@
 </Style>
 <Style name="place_label-capitals" filter-mode="first">
   <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([capital] = 2) and ([ldir] = 'NW')</Filter>
-    <ShieldSymbolizer dx="-3" dy="-3" file="star.svg" face-name="Arial Unicode MS Regular" size="12" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="16" dx="-3" dy="-3" file="star.svg" face-name="Arial Unicode MS Regular" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([capital] = 2) and ([ldir] = 'NW')</Filter>
+    <ShieldSymbolizer dx="-3" dy="-3" file="star.svg" face-name="Arial Unicode MS Regular" size="14" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([capital] = 2) and ([ldir] = 'SW')</Filter>
-    <ShieldSymbolizer dx="-3" dy="3" file="star.svg" face-name="Arial Unicode MS Regular" size="12" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="16" dx="-3" dy="3" file="star.svg" face-name="Arial Unicode MS Regular" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([capital] = 2) and ([ldir] = 'SW')</Filter>
+    <ShieldSymbolizer dx="-3" dy="3" file="star.svg" face-name="Arial Unicode MS Regular" size="14" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([capital] = 2) and ([ldir] = 'SE')</Filter>
-    <ShieldSymbolizer dx="3" dy="3" file="star.svg" face-name="Arial Unicode MS Regular" size="12" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="16" dx="3" dy="3" file="star.svg" face-name="Arial Unicode MS Regular" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([capital] = 2) and ([ldir] = 'SE')</Filter>
+    <ShieldSymbolizer dx="3" dy="3" file="star.svg" face-name="Arial Unicode MS Regular" size="14" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([capital] = 2) and ([ldir] = 'NE')</Filter>
-    <ShieldSymbolizer dx="3" dy="-3" file="star.svg" face-name="Arial Unicode MS Regular" size="12" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="16" dx="3" dy="-3" file="star.svg" face-name="Arial Unicode MS Regular" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([capital] = 2) and ([ldir] = 'NE')</Filter>
+    <ShieldSymbolizer dx="3" dy="-3" file="star.svg" face-name="Arial Unicode MS Regular" size="14" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([capital] = 2) and ([ldir] = 'S')</Filter>
-    <ShieldSymbolizer dy="6" file="star.svg" face-name="Arial Unicode MS Regular" size="12" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="16" dy="6" file="star.svg" face-name="Arial Unicode MS Regular" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([capital] = 2) and ([ldir] = 'S')</Filter>
+    <ShieldSymbolizer dy="6" file="star.svg" face-name="Arial Unicode MS Regular" size="14" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([capital] = 2) and ([ldir] = 'N')</Filter>
-    <ShieldSymbolizer dy="-5" file="star.svg" face-name="Arial Unicode MS Regular" size="12" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="16" dy="-5" file="star.svg" face-name="Arial Unicode MS Regular" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([capital] = 2) and ([ldir] = 'N')</Filter>
+    <ShieldSymbolizer dy="-5" file="star.svg" face-name="Arial Unicode MS Regular" size="14" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([capital] = 2) and ([ldir] = 'W')</Filter>
-    <ShieldSymbolizer dx="-6" file="star.svg" face-name="Arial Unicode MS Regular" size="12" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="16" dx="-6" file="star.svg" face-name="Arial Unicode MS Regular" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([capital] = 2) and ([ldir] = 'W')</Filter>
+    <ShieldSymbolizer dx="-6" file="star.svg" face-name="Arial Unicode MS Regular" size="14" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([capital] = 2) and ([ldir] = 'E')</Filter>
-    <ShieldSymbolizer dx="6" file="star.svg" face-name="Arial Unicode MS Regular" size="12" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="16" dx="6" file="star.svg" face-name="Arial Unicode MS Regular" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([capital] = 2) and ([ldir] = 'E')</Filter>
+    <ShieldSymbolizer dx="6" file="star.svg" face-name="Arial Unicode MS Regular" size="14" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([capital] = 2)</Filter>
-    <ShieldSymbolizer file="star.svg" face-name="Arial Unicode MS Regular" size="12" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="16" file="star.svg" face-name="Arial Unicode MS Regular" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([capital] = 2)</Filter>
+    <ShieldSymbolizer file="star.svg" face-name="Arial Unicode MS Regular" size="14" fill="#888888" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
 </Style>
 <Layer name="place_label"

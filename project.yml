@@ -10,9 +10,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - 0.1373291015625
-  - 51.53523137707124
-  - 11
+  - 0.2362060546875
+  - 51.5429188223739
+  - 7
 description: ''
 format: "png8:m=h"
 interactivity_layer: ''
