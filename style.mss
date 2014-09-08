@@ -93,7 +93,7 @@ Map { background-color: @land; }
 // Water Features //
 #water {
   ::shadow {
-    polygon-fill: mix(@land,@fill4,80);
+    polygon-fill: mix(@land,@fill4,75);
   }
   ::fill {
     // a fill and overlay comp-op lighten the polygon-
@@ -108,7 +108,7 @@ Map { background-color: @land; }
 
 // Water color is calculated by sampling the resulting color from
 // the soft-light comp-op in the #water layer style above. 
-@water: #d6d6d6;
+@water: #d1d1d1;
 
 #waterway {
   [type='river'],

@@ -178,17 +178,17 @@
 #marine_label { 
   text-name: @name;
   text-face-name: @sans_bold;
-  text-fill: mix(@text2,@text1,25);
+  text-fill: @text1;
   text-size: 12;
   text-halo-fill: @water;
   text-halo-radius: 1;
   text-wrap-before: true;
   text-wrap-width: 60;
+  text-fill: blue;
   text-character-spacing: 2;
   [labelrank=1] {
    text-size: 18;
   }
-  [placement='line'] { text-placement: line;}
 }
 
 #water_label {
@@ -202,7 +202,7 @@
     text-size: 12;
     text-halo-fill: @water;
     text-halo-radius: 1;
-    text-wrap-width: 100;
+    text-wrap-width: 60;
     text-wrap-before: true;
     text-avoid-edges: true;
   }
@@ -214,7 +214,7 @@
   text-name: @name;
   text-face-name: @sans_bold;
   text-fill: @text1;
-  text-min-distance: 100;
+  text-min-distance: 60;
   text-size: 12;
   text-halo-fill: @water;
   text-halo-radius: 1;
@@ -224,12 +224,12 @@
 }
 
 // Place labels
-#poi_label[maki='park'],
-#poi_label[maki='airport'],
-#poi_label[maki='airfield'],
-#poi_label[maki='rail'],
-#poi_label[maki='school'],
-#poi_label[scalerank='hospital'] { 
+#poi_label[maki='park'][scalerank<=2],
+#poi_label[maki='airport'][scalerank<=2],
+#poi_label[maki='airfield'][scalerank<=2],
+#poi_label[maki='rail'][scalerank<=2],
+#poi_label[maki='school'][scalerank<=2],
+#poi_label[scalerank='hospital'][scalerank<=2] { 
   text-face-name: @sans_bold;
   text-allow-overlap: false;
   text-name: @name;
