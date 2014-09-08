@@ -1,6 +1,6 @@
 {
     "name": "mapbox-studio-light",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Default style project for Mapbox Studio.",
     "main": "./package.json"
 }
