@@ -17,12 +17,12 @@ maintain or invert existing value (light to dark) scale.
 
 @fill1: #fff;
 @fill2: #bbb;
-@fill3: #888;
+@fill3: #777;
 @fill4: #000;
 
 @text1: #fff;
 @text2: #bbb;
-@text3: #888;
+@text3: #777;
 @text4: #666;
 
 Map { background-color: @land; }

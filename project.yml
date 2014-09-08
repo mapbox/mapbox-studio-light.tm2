@@ -1,5 +1,5 @@
 _prefs: 
-  saveCenter: true
+  saveCenter: false
 _properties: 
   bridge: 
     "group-by": layer
@@ -10,16 +10,16 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -93.21521759033203
-  - 44.87314589455271
-  - 13
-description: ''
+  - 15.292968749999998
+  - 50.84757295365389
+  - 4
+description: A monotone basemap that's easy to recolor.
 format: "png8:m=h"
 interactivity_layer: ''
 layers: null
 maxzoom: 22
 minzoom: 0
-name: ''
+name: Mapbox Light
 source: "mapbox:///mapbox.mapbox-streets-v5"
 styles: 
   - style.mss
