@@ -170,7 +170,7 @@
   text-min-distance: 100;
   text-halo-fill: @land;
   text-halo-radius: 1;
-  text-fill: mix(@text3,@text2,50);
+  text-fill: @text3;
   [zoom>=17] { text-size: 11;}
 }
 
@@ -213,7 +213,7 @@
   text-face-name: @sans_bold;
   text-fill: @text3;
   text-min-distance: 60;
-  text-size: 12;
+  text-size: 10;
   text-halo-fill: @water;
   text-halo-radius: 1;
   text-wrap-before: true;
