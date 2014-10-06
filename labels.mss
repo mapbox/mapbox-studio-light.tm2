@@ -2,7 +2,7 @@
 #country_label[zoom>=3] {
   text-name: @name;
   text-face-name: @sans_bold;
-  text-fill: @text4;
+  text-fill: @text;
   text-size: 12;
   text-halo-fill: @land;
   text-halo-radius: 1;
@@ -24,14 +24,10 @@
   [zoom>=8][scalerank>=3] {
     text-size: 20;
   }
-
-  // At zoom level 9, major cities replace countries
-  // as most emphasized feature
-  [zoom>=9] { text-fill: @text2;}
 }
 
 #country_label_line { 
-  line-color: @text3;
+  line-color: @text;
   line-dasharray: 3,3;
   line-width: 1;
 }
@@ -40,7 +36,7 @@
 #state_label { 
   text-name: @name;
   text-face-name: @sans;
-  text-fill: @text3;
+  text-fill: @text;
   text-size: 12;
   text-halo-fill: @land;
   text-halo-radius: 1;
@@ -53,7 +49,7 @@
   shield-name: @name;
   shield-face-name: @sans;
   shield-size: 14;
-  shield-fill: @text3;
+  shield-fill: @text;
   shield-halo-fill: @land;
   shield-halo-radius: 1;
   shield-unlock-image: true;
@@ -81,7 +77,7 @@
   shield-name: @name;
   shield-face-name: @sans;
   shield-size: 12;
-  shield-fill: @text3;
+  shield-fill: @text;
   shield-halo-fill: @land;
   shield-halo-radius: 1;
   shield-unlock-image: true;
@@ -112,13 +108,13 @@
   text-name: @name;
   text-face-name: @sans;
   text-size: 16;
-  text-fill: @text3;
+  text-fill: @text;
   text-halo-fill: @land;
   text-halo-radius: 1;
   text-min-distance: 4;
   text-wrap-width: 80;
   [scalerank<=3] { 
-    text-fill: @text4;
+    text-fill: @text;
     text-size: 20;
   } 
 }
@@ -133,14 +129,14 @@
   text-name: @name;
   text-face-name: @sans;
   text-size: 14;
-  text-fill: @text3;
+  text-fill: @text;
   text-halo-fill: @land;
   text-halo-radius: 2;
   text-min-distance: 4;
   text-wrap-width: 80;
   [zoom>=12] { 
     text-size: 16;
-    text-fill: @text3;
+    text-fill: @text;
   }
 }
 
@@ -152,7 +148,7 @@
   text-name: @name;
   text-face-name: @sans;
   text-size: 14;
-  text-fill: @text3;
+  text-fill: @text;
   text-halo-fill: @land;
   text-halo-radius: 2;
   text-min-distance: 4;
@@ -170,7 +166,7 @@
   text-min-distance: 100;
   text-halo-fill: @land;
   text-halo-radius: 1;
-  text-fill: @text3;
+  text-fill: @text;
   [zoom>=17] { text-size: 11;}
 }
 
@@ -178,7 +174,7 @@
 #marine_label { 
   text-name: @name;
   text-face-name: @sans_bold;
-  text-fill: @text3;
+  text-fill: @text;
   text-size: 12;
   text-halo-fill: @water;
   text-halo-radius: 1;
@@ -196,7 +192,7 @@
   [zoom>=17] {
     text-name: @name;
     text-face-name: @sans_bold;
-    text-fill: @text3;
+    text-fill: @text;
     text-size: 12;
     text-halo-fill: @water;
     text-halo-radius: 1;
@@ -211,7 +207,7 @@
 #waterway_label[type='stream'][zoom>=15] { 
   text-name: @name;
   text-face-name: @sans_bold;
-  text-fill: @text3;
+  text-fill: @text;
   text-min-distance: 60;
   text-size: 10;
   text-halo-fill: @water;
@@ -237,6 +233,6 @@
   text-wrap-width: 60;
   text-halo-fill: @land;
   text-halo-radius: 1;
-  text-fill: @text3;
+  text-fill: @text;
   [zoom>14][scalerank<2] { text-size: 9;}
 }

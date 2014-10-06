@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">15.292968749999998,50.84757295365389,4</Parameter>
+  <Parameter name="center">15.293,50.8476,4</Parameter>
   <Parameter name="description"><![CDATA[A monotone basemap that's easy to recolor.]]></Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
@@ -1243,140 +1243,105 @@
 
 <Style name="country_label" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([scalerank] = 3)</Filter>
-    <TextSymbolizer size="20" fill="#bbbbbb" face-name="Arial Unicode MS Bold" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([scalerank] = 3)</Filter>
-    <TextSymbolizer size="20" face-name="Arial Unicode MS Bold" fill="#666666" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="20" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([scalerank] = 3)</Filter>
-    <TextSymbolizer size="16" face-name="Arial Unicode MS Bold" fill="#666666" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="16" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
     <Filter>([scalerank] = 3)</Filter>
-    <TextSymbolizer size="14" face-name="Arial Unicode MS Bold" fill="#666666" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="14" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([scalerank] = 3)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#666666" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([scalerank] &gt; 3)</Filter>
-    <TextSymbolizer size="20" fill="#bbbbbb" face-name="Arial Unicode MS Bold" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([scalerank] &gt; 3)</Filter>
-    <TextSymbolizer size="20" face-name="Arial Unicode MS Bold" fill="#666666" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="20" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([scalerank] &gt; 3)</Filter>
-    <TextSymbolizer size="16" face-name="Arial Unicode MS Bold" fill="#666666" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="16" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([scalerank] &gt; 3)</Filter>
-    <TextSymbolizer size="14" face-name="Arial Unicode MS Bold" fill="#666666" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="14" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
     <Filter>([scalerank] &gt; 3)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#666666" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([scalerank] &gt;= 3)</Filter>
-    <TextSymbolizer size="20" fill="#bbbbbb" face-name="Arial Unicode MS Bold" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([scalerank] &gt;= 3)</Filter>
-    <TextSymbolizer size="20" face-name="Arial Unicode MS Bold" fill="#666666" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="20" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([scalerank] &gt;= 3)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#666666" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([scalerank] = 2)</Filter>
-    <TextSymbolizer size="20" fill="#bbbbbb" face-name="Arial Unicode MS Bold" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([scalerank] = 2)</Filter>
-    <TextSymbolizer size="20" face-name="Arial Unicode MS Bold" fill="#666666" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="20" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([scalerank] = 2)</Filter>
-    <TextSymbolizer size="16" face-name="Arial Unicode MS Bold" fill="#666666" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="16" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([scalerank] = 2)</Filter>
-    <TextSymbolizer size="14" face-name="Arial Unicode MS Bold" fill="#666666" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="14" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([scalerank] = 2)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#666666" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([scalerank] = 1)</Filter>
-    <TextSymbolizer size="20" fill="#bbbbbb" face-name="Arial Unicode MS Bold" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([scalerank] = 1)</Filter>
-    <TextSymbolizer size="20" face-name="Arial Unicode MS Bold" fill="#666666" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="20" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
     <Filter>([scalerank] = 1)</Filter>
-    <TextSymbolizer size="16" face-name="Arial Unicode MS Bold" fill="#666666" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="16" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([scalerank] = 1)</Filter>
-    <TextSymbolizer size="14" face-name="Arial Unicode MS Bold" fill="#666666" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <TextSymbolizer fill="#bbbbbb" face-name="Arial Unicode MS Bold" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="14" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#666666" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="country_label"
@@ -1386,10 +1351,10 @@
 <Style name="marine_label" filter-mode="first">
   <Rule>
     <Filter>([labelrank] = 1)</Filter>
-    <TextSymbolizer size="18" face-name="Arial Unicode MS Bold" fill="#ffffff" halo-fill="#d1d1d1" halo-radius="1" wrap-before="true" wrap-width="60" character-spacing="2" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="18" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" wrap-before="true" wrap-width="60" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#ffffff" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-before="true" wrap-width="60" character-spacing="2" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-before="true" wrap-width="60" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="marine_label"
@@ -1398,7 +1363,7 @@
 
 <Style name="state_label" filter-mode="first">
   <Rule>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#bbbbbb" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="state_label"
@@ -1415,7 +1380,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &gt; 9) and ([ldir] = 'NW') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -1437,7 +1402,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &gt; 9) and ([ldir] = 'SW') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -1459,7 +1424,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &gt; 9) and ([ldir] = 'SE') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -1481,7 +1446,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &gt; 9) and ([ldir] = 'NE') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -1503,7 +1468,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &gt; 9) and ([ldir] = 'S') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -1525,7 +1490,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &gt; 9) and ([ldir] = 'N') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -1547,7 +1512,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &gt; 9) and ([ldir] = 'W') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -1569,7 +1534,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &gt; 9) and ([ldir] = 'E') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -1591,7 +1556,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] &gt; 9) and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -1613,7 +1578,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'NW') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
@@ -1635,7 +1600,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'SW') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
@@ -1657,7 +1622,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'SE') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
@@ -1679,7 +1644,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'NE') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
@@ -1701,7 +1666,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'S') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
@@ -1723,7 +1688,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'N') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
@@ -1745,7 +1710,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'W') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
@@ -1767,7 +1732,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'E') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
@@ -1789,7 +1754,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 3) and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
@@ -1804,312 +1769,6 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'NW') and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="16" dx="-3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'NW') and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="14" dx="-3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'NW') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'NW')</Filter>
-    <ShieldSymbolizer size="16" dx="-3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'NW')</Filter>
-    <ShieldSymbolizer size="14" dx="-3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'NW')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'SW') and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="16" dx="-3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'SW') and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="14" dx="-3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'SW') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'SW')</Filter>
-    <ShieldSymbolizer size="16" dx="-3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'SW')</Filter>
-    <ShieldSymbolizer size="14" dx="-3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'SW')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'SE') and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="16" dx="3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'SE') and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="14" dx="3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'SE') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'SE')</Filter>
-    <ShieldSymbolizer size="16" dx="3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'SE')</Filter>
-    <ShieldSymbolizer size="14" dx="3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'SE')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'NE') and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="16" dx="3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'NE') and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="14" dx="3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'NE') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'NE')</Filter>
-    <ShieldSymbolizer size="16" dx="3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'NE')</Filter>
-    <ShieldSymbolizer size="14" dx="3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'NE')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'S') and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="16" dy="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'S') and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="14" dy="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'S') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'S')</Filter>
-    <ShieldSymbolizer size="16" dy="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'S')</Filter>
-    <ShieldSymbolizer size="14" dy="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'S')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'N') and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="16" dy="-5" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'N') and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="14" dy="-5" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'N') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'N')</Filter>
-    <ShieldSymbolizer size="16" dy="-5" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'N')</Filter>
-    <ShieldSymbolizer size="14" dy="-5" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'N')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'W') and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="16" dx="-6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'W') and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="14" dx="-6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'W') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'W')</Filter>
-    <ShieldSymbolizer size="16" dx="-6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'W')</Filter>
-    <ShieldSymbolizer size="14" dx="-6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'W')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'E') and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="16" dx="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'E') and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="14" dx="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'E') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'E')</Filter>
-    <ShieldSymbolizer size="16" dx="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'E')</Filter>
-    <ShieldSymbolizer size="14" dx="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'E')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="16" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 3)</Filter>
-    <ShieldSymbolizer size="14" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6)</Filter>
-    <ShieldSymbolizer size="16" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6)</Filter>
-    <ShieldSymbolizer size="14" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 2) and ([ldir] = 'NW') and ([scalerank] &lt;= 3)</Filter>
     <ShieldSymbolizer size="16" dx="-3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
@@ -2123,7 +1782,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 2) and ([ldir] = 'NW') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
@@ -2157,7 +1816,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 2) and ([ldir] = 'SW') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
@@ -2191,7 +1850,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 2) and ([ldir] = 'SE') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
@@ -2225,7 +1884,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 2) and ([ldir] = 'NE') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
@@ -2259,7 +1918,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 2) and ([ldir] = 'S') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
@@ -2293,7 +1952,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 2) and ([ldir] = 'N') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
@@ -2327,7 +1986,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 2) and ([ldir] = 'W') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
@@ -2361,7 +2020,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 2) and ([ldir] = 'E') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
@@ -2395,7 +2054,7 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 2) and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
@@ -2412,6 +2071,312 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 2) and ([scalerank] &lt;= 6)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'NW') and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="16" dx="-3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'NW') and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="14" dx="-3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'NW') and ([scalerank] &lt;= 3)</Filter>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'NW')</Filter>
+    <ShieldSymbolizer size="16" dx="-3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'NW')</Filter>
+    <ShieldSymbolizer size="14" dx="-3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'NW')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'SW') and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="16" dx="-3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'SW') and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="14" dx="-3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'SW') and ([scalerank] &lt;= 3)</Filter>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'SW')</Filter>
+    <ShieldSymbolizer size="16" dx="-3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'SW')</Filter>
+    <ShieldSymbolizer size="14" dx="-3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'SW')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'SE') and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="16" dx="3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'SE') and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="14" dx="3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'SE') and ([scalerank] &lt;= 3)</Filter>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'SE')</Filter>
+    <ShieldSymbolizer size="16" dx="3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'SE')</Filter>
+    <ShieldSymbolizer size="14" dx="3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'SE')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'NE') and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="16" dx="3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'NE') and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="14" dx="3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'NE') and ([scalerank] &lt;= 3)</Filter>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'NE')</Filter>
+    <ShieldSymbolizer size="16" dx="3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'NE')</Filter>
+    <ShieldSymbolizer size="14" dx="3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'NE')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'S') and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="16" dy="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'S') and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="14" dy="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'S') and ([scalerank] &lt;= 3)</Filter>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'S')</Filter>
+    <ShieldSymbolizer size="16" dy="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'S')</Filter>
+    <ShieldSymbolizer size="14" dy="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'S')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'N') and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="16" dy="-5" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'N') and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="14" dy="-5" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'N') and ([scalerank] &lt;= 3)</Filter>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'N')</Filter>
+    <ShieldSymbolizer size="16" dy="-5" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'N')</Filter>
+    <ShieldSymbolizer size="14" dy="-5" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'N')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'W') and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="16" dx="-6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'W') and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="14" dx="-6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'W') and ([scalerank] &lt;= 3)</Filter>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'W')</Filter>
+    <ShieldSymbolizer size="16" dx="-6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'W')</Filter>
+    <ShieldSymbolizer size="14" dx="-6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'W')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'E') and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="16" dx="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'E') and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="14" dx="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'E') and ([scalerank] &lt;= 3)</Filter>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'E')</Filter>
+    <ShieldSymbolizer size="16" dx="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'E')</Filter>
+    <ShieldSymbolizer size="14" dx="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6) and ([ldir] = 'E')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="16" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 3)</Filter>
+    <ShieldSymbolizer size="14" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 3)</Filter>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6)</Filter>
+    <ShieldSymbolizer size="16" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6)</Filter>
+    <ShieldSymbolizer size="14" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 1) and ([scalerank] &lt;= 6)</Filter>
     <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -2667,159 +2632,6 @@
     <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'NW')</Filter>
-    <ShieldSymbolizer size="14" dx="-3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'NW')</Filter>
-    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'NW')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'SW')</Filter>
-    <ShieldSymbolizer size="14" dx="-3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'SW')</Filter>
-    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'SW')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'SE')</Filter>
-    <ShieldSymbolizer size="14" dx="3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'SE')</Filter>
-    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'SE')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'NE')</Filter>
-    <ShieldSymbolizer size="14" dx="3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'NE')</Filter>
-    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'NE')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'S')</Filter>
-    <ShieldSymbolizer size="14" dy="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'S')</Filter>
-    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'S')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'N')</Filter>
-    <ShieldSymbolizer size="14" dy="-5" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'N')</Filter>
-    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'N')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'W')</Filter>
-    <ShieldSymbolizer size="14" dx="-6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'W')</Filter>
-    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'W')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'E')</Filter>
-    <ShieldSymbolizer size="14" dx="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'E')</Filter>
-    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'E')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1)</Filter>
-    <ShieldSymbolizer size="14" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1)</Filter>
-    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([type] = 'town') and ([localrank] &lt;= 1)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 1) and ([ldir] = 'NW')</Filter>
@@ -2973,103 +2785,157 @@
     <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'NW')</Filter>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'NW')</Filter>
     <ShieldSymbolizer size="14" dx="-3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'NW')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'NW')</Filter>
+    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'NW')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'SW')</Filter>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'SW')</Filter>
     <ShieldSymbolizer size="14" dx="-3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'SW')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'SW')</Filter>
+    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'SW')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'SE')</Filter>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'SE')</Filter>
     <ShieldSymbolizer size="14" dx="3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'SE')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'SE')</Filter>
+    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'SE')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'NE')</Filter>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'NE')</Filter>
     <ShieldSymbolizer size="14" dx="3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'NE')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'NE')</Filter>
+    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'NE')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'S')</Filter>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'S')</Filter>
     <ShieldSymbolizer size="14" dy="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'S')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'S')</Filter>
+    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'S')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'N')</Filter>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'N')</Filter>
     <ShieldSymbolizer size="14" dy="-5" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'N')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'N')</Filter>
+    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'N')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'W')</Filter>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'W')</Filter>
     <ShieldSymbolizer size="14" dx="-6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'W')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'W')</Filter>
+    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'W')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'E')</Filter>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'E')</Filter>
     <ShieldSymbolizer size="14" dx="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'E')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'E')</Filter>
+    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1) and ([ldir] = 'E')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3)</Filter>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1)</Filter>
     <ShieldSymbolizer size="14" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([type] = 'city') and ([localrank] = 3)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'town') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
@@ -3222,6 +3088,105 @@
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([localrank] = 2)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'NW')</Filter>
+    <ShieldSymbolizer size="14" dx="-3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'NW')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'SW')</Filter>
+    <ShieldSymbolizer size="14" dx="-3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'SW')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'SE')</Filter>
+    <ShieldSymbolizer size="14" dx="3" dy="3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'SE')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'NE')</Filter>
+    <ShieldSymbolizer size="14" dx="3" dy="-3" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'NE')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'S')</Filter>
+    <ShieldSymbolizer size="14" dy="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'S')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'N')</Filter>
+    <ShieldSymbolizer size="14" dy="-5" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'N')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'W')</Filter>
+    <ShieldSymbolizer size="14" dx="-6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'W')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'E')</Filter>
+    <ShieldSymbolizer size="14" dx="6" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3) and ([ldir] = 'E')</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3)</Filter>
+    <ShieldSymbolizer size="14" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#eeeeee" halo-radius="1" unlock-image="true" file="dot.svg" wrap-width="80" line-spacing="-2" ><![CDATA[[name_en]]]></ShieldSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <Filter>([type] = 'city') and ([localrank] = 3)</Filter>
     <TextSymbolizer face-name="Arial Unicode MS Regular" size="16" fill="#777777" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -3257,7 +3222,7 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'town')</Filter>
+    <Filter>([type] = 'hamlet')</Filter>
     <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -3267,13 +3232,13 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'hamlet')</Filter>
+    <Filter>([type] = 'town')</Filter>
     <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([type] = 'city') and ([scalerank] &lt;= 3)</Filter>
-    <TextSymbolizer fill="#666666" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer fill="#777777" size="20" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="1" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -3399,32 +3364,38 @@
 
 <Style name="water_label" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([area] &gt; 500000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#ffffff" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-width="60" wrap-before="true" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-width="60" wrap-before="true" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([area] &gt; 500000)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-width="60" wrap-before="true" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([area] &gt; 500000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#ffffff" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-width="60" wrap-before="true" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-width="60" wrap-before="true" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#ffffff" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-width="60" wrap-before="true" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-width="60" wrap-before="true" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#ffffff" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-width="60" wrap-before="true" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#ffffff" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-width="60" wrap-before="true" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-width="60" wrap-before="true" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#ffffff" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-width="60" wrap-before="true" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-width="60" wrap-before="true" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-width="60" wrap-before="true" avoid-edges="true" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="water_label"
@@ -3434,26 +3405,6 @@
 <Style name="poi_label" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([maki] = 'airport') and ([scalerank] &lt; 2)</Filter>
-    <TextSymbolizer size="9" face-name="Arial Unicode MS Bold" allow-overlap="false" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([maki] = 'airport') and ([scalerank] &lt; 2)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" allow-overlap="false" size="9" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([maki] = 'rail') and ([scalerank] &lt; 2)</Filter>
-    <TextSymbolizer size="9" face-name="Arial Unicode MS Bold" allow-overlap="false" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([maki] = 'rail') and ([scalerank] &lt; 2)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" allow-overlap="false" size="9" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([scalerank] = 'hospital') and ([scalerank] &lt;= 2)</Filter>
     <TextSymbolizer size="9" face-name="Arial Unicode MS Bold" allow-overlap="false" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
@@ -3474,12 +3425,32 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <Filter>([maki] = 'rail') and ([scalerank] &lt; 2)</Filter>
+    <TextSymbolizer size="9" face-name="Arial Unicode MS Bold" allow-overlap="false" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([maki] = 'rail') and ([scalerank] &lt; 2)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" allow-overlap="false" size="9" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([maki] = 'park') and ([scalerank] &lt; 2)</Filter>
     <TextSymbolizer size="9" face-name="Arial Unicode MS Bold" allow-overlap="false" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([maki] = 'park') and ([scalerank] &lt; 2)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" allow-overlap="false" size="9" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <Filter>([maki] = 'airport') and ([scalerank] &lt; 2)</Filter>
+    <TextSymbolizer size="9" face-name="Arial Unicode MS Bold" allow-overlap="false" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([maki] = 'airport') and ([scalerank] &lt; 2)</Filter>
     <TextSymbolizer face-name="Arial Unicode MS Bold" allow-overlap="false" size="9" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -3521,24 +3492,24 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([len] &gt; 2000)</Filter>
-    <TextSymbolizer size="11" placement="line" text-transform="uppercase" face-name="Arial Unicode MS Regular" minimum-distance="100" halo-fill="#eeeeee" halo-radius="1" fill="#999999" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="11" placement="line" text-transform="uppercase" face-name="Arial Unicode MS Regular" minimum-distance="100" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([len] &gt; 2000)</Filter>
-    <TextSymbolizer placement="line" text-transform="uppercase" face-name="Arial Unicode MS Regular" size="9" minimum-distance="100" halo-fill="#eeeeee" halo-radius="1" fill="#999999" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placement="line" text-transform="uppercase" face-name="Arial Unicode MS Regular" size="9" minimum-distance="100" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([len] &gt; 1000)</Filter>
-    <TextSymbolizer size="11" placement="line" text-transform="uppercase" face-name="Arial Unicode MS Regular" minimum-distance="100" halo-fill="#eeeeee" halo-radius="1" fill="#999999" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="11" placement="line" text-transform="uppercase" face-name="Arial Unicode MS Regular" minimum-distance="100" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([len] &gt; 1000)</Filter>
-    <TextSymbolizer placement="line" text-transform="uppercase" face-name="Arial Unicode MS Regular" size="9" minimum-distance="100" halo-fill="#eeeeee" halo-radius="1" fill="#999999" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placement="line" text-transform="uppercase" face-name="Arial Unicode MS Regular" size="9" minimum-distance="100" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="road_label"
@@ -3549,17 +3520,17 @@
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([type] = 'canal')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#ffffff" minimum-distance="60" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-before="true" avoid-edges="true" placement="line" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" minimum-distance="60" size="10" halo-fill="#d1d1d1" halo-radius="1" wrap-before="true" avoid-edges="true" placement="line" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([type] = 'stream')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#ffffff" minimum-distance="60" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-before="true" avoid-edges="true" placement="line" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" minimum-distance="60" size="10" halo-fill="#d1d1d1" halo-radius="1" wrap-before="true" avoid-edges="true" placement="line" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([type] = 'river')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#ffffff" minimum-distance="60" size="12" halo-fill="#d1d1d1" halo-radius="1" wrap-before="true" avoid-edges="true" placement="line" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" minimum-distance="60" size="10" halo-fill="#d1d1d1" halo-radius="1" wrap-before="true" avoid-edges="true" placement="line" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="waterway_label"

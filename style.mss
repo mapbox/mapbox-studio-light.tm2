@@ -20,10 +20,7 @@ maintain or invert existing value (light to dark) scale.
 @fill3: #777;
 @fill4: #000;
 
-@text1: #fff;
-@text2: #bbb;
-@text3: #777;
-@text4: #666;
+@text: #777;
 
 Map { background-color: @land; }
 
