@@ -40,7 +40,7 @@
 #state_label { 
   text-name: @name;
   text-face-name: @sans;
-  text-fill: @text2;
+  text-fill: @text3;
   text-size: 12;
   text-halo-fill: @land;
   text-halo-radius: 1;
@@ -178,14 +178,12 @@
 #marine_label { 
   text-name: @name;
   text-face-name: @sans_bold;
-  text-fill: @text1;
+  text-fill: @text3;
   text-size: 12;
   text-halo-fill: @water;
   text-halo-radius: 1;
   text-wrap-before: true;
   text-wrap-width: 60;
-  text-fill: blue;
-  text-character-spacing: 2;
   [labelrank=1] {
    text-size: 18;
   }
@@ -198,7 +196,7 @@
   [zoom>=17] {
     text-name: @name;
     text-face-name: @sans_bold;
-    text-fill: @text1;
+    text-fill: @text3;
     text-size: 12;
     text-halo-fill: @water;
     text-halo-radius: 1;
@@ -213,7 +211,7 @@
 #waterway_label[type='stream'][zoom>=15] { 
   text-name: @name;
   text-face-name: @sans_bold;
-  text-fill: @text1;
+  text-fill: @text3;
   text-min-distance: 60;
   text-size: 12;
   text-halo-fill: @water;
