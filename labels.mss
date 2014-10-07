@@ -179,7 +179,7 @@
   text-halo-fill: @water;
   text-halo-radius: 1;
   text-wrap-before: true;
-  text-wrap-width: 60;
+  text-wrap-width: 90;
   [labelrank=1] {
    text-size: 18;
   }
@@ -234,5 +234,4 @@
   text-halo-fill: @land;
   text-halo-radius: 1;
   text-fill: @text;
-  [zoom>14][scalerank<2] { text-size: 9;}
 }

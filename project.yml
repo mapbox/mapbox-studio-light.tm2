@@ -10,8 +10,8 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - 15.292968749999998
-  - 50.84757295365389
+  - 15.293
+  - 50.8476
   - 4
 description: A monotone basemap that's easy to recolor.
 format: "png8:m=h"
