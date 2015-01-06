@@ -2,8 +2,12 @@
 @name: '[name_en]';
 
 // Fonts //
-@sans: 'Arial Unicode MS Regular';
-@sans_bold: 'Arial Unicode MS Bold';
+@fallback: 'Open Sans Regular';
+@sans: 'Open Sans Regular', 'Arial Unicode MS Regular';
+@sans_md: 'Open Sans Semibold', 'Arial Unicode MS Regular';
+@sans_bd: 'Open Sans Bold','Arial Unicode MS Bold';
+@sans_it: 'Open Sans Italic', 'Arial Unicode MS Regular';
+@sans_bdit: 'Open Sans Bold Italic','Arial Unicode MS Bold';
 
 /*
 This style is designed to be easily recolored by adjusting the color

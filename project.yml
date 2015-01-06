@@ -16,13 +16,37 @@ center:
 description: A monotone basemap that's easy to recolor.
 format: "png8:m=h"
 interactivity_layer: ''
-layers: null
+layers: 
+  - landcover
+  - landuse
+  - hillshade
+  - waterway
+  - water
+  - aeroway
+  - barrier_line
+  - building
+  - landuse_overlay
+  - tunnel
+  - road
+  - bridge
+  - admin
+  - country_label_line
+  - country_label
+  - marine_label
+  - state_label
+  - place_label
+  - water_label
+  - poi_label
+  - road_label
+  - waterway_label
+  - housenum_label
 maxzoom: 22
 minzoom: 0
 name: Mapbox Light
-source: "mapbox:///mapbox.mapbox-streets-v5"
+source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5"
 styles: 
   - style.mss
   - labels.mss
   - roads.mss
+  - terrain.mss
 template: ''

@@ -1,7 +1,9 @@
+
+
 // Country labels //
 #country_label[zoom>=3] {
   text-name: @name;
-  text-face-name: @sans_bold;
+  text-face-name: @sans_bd;
   text-fill: @text;
   text-size: 12;
   text-halo-fill: @land;
@@ -32,134 +34,117 @@
   line-width: 1;
 }
 
-// State labels //
-#state_label { 
-  text-name: @name;
-  text-face-name: @sans;
-  text-fill: @text;
-  text-size: 12;
-  text-halo-fill: @land;
-  text-halo-radius: 1;
-  text-wrap-width: 50;
-}
 
-// Display capital cities alongside stars.
-#place_label::capitals[type='city'][capital=2][zoom<9] { 
-  shield-file: url("star.svg");
-  shield-name: @name;
-  shield-face-name: @sans;
-  shield-size: 14;
-  shield-fill: @text;
-  shield-halo-fill: @land;
-  shield-halo-radius: 1;
-  shield-unlock-image: true;
-  shield-wrap-width: 80;
-  shield-line-spacing: -2;
-  // Fine-tune label positioning.
-  [ldir='E'] { shield-text-dx: 6; }
-  [ldir='W'] { shield-text-dx: -6; }
-  [ldir='N'] { shield-text-dy: -5; }
-  [ldir='S'] { shield-text-dy: 6; }
-  [ldir='NE'] { shield-text-dx: 3; shield-text-dy: -3; }
-  [ldir='SE'] { shield-text-dx: 3; shield-text-dy: 3; }
-  [ldir='SW'] { shield-text-dx: -3; shield-text-dy: 3; }
-  [ldir='NW'] { shield-text-dx: -3; shield-text-dy: -3; }
 
-  [zoom>=6] { shield-size: 16; } 
-}
+// ---------------------------------------------------------------------
+// Cities, towns, villages, etc
 
-// Display low zoom cities alongside points.
-#place_label[type='city'][localrank=1][zoom>=4][zoom<9],
-#place_label[type='city'][localrank=2][zoom>=5][zoom<10],
-#place_label[type='city'][localrank=3][zoom>=7][zoom<10],
-#place_label[type='city'][localrank>=4][localrank>9][zoom>=8][zoom<10],
-#place_label[type='town'][localrank<=1][zoom>=9][zoom<10] {
-  shield-name: @name;
-  shield-face-name: @sans;
-  shield-size: 12;
-  shield-fill: @text;
-  shield-halo-fill: @land;
-  shield-halo-radius: 1;
-  shield-unlock-image: true;
-  shield-file: url("dot.svg");
-  shield-wrap-width: 80;
-  shield-line-spacing: -2;
+// City labels with dots for low zoom levels.
+// The separate attachment keeps the size of the XML down.
+#place_label::citydots[type='city'][zoom>=4][zoom<=7][localrank<=3] {
+  // explicitly defining all the `ldir` values wer'e going
+  // to use shaves a bit off the final project.xml size
+  [ldir='N'],[ldir='S'],[ldir='E'],[ldir='W'],
+  [ldir='NE'],[ldir='SE'],[ldir='SW'],[ldir='NW'] {
+    shield-file: url("shield/dot.svg");
+    shield-transform:scale(0.3,0.3);
+    shield-unlock-image: true;
+    shield-name: @name;
+    shield-size: 12;
+    shield-face-name: @sans;
+    shield-placement: point;
+    shield-fill: @text;
+    shield-halo-fill: @fill1;
+    shield-halo-radius: 2;
+    shield-halo-rasterizer: fast;
+    shield-margin:30;
+    shield-opacity:0.5;
+    [zoom=7] { shield-size: 14; }
 
-  // Fine-tune label positioning.
-  [ldir='E'] { shield-text-dx: 6; }
-  [ldir='W'] { shield-text-dx: -6; }
-  [ldir='N'] { shield-text-dy: -5; }
-  [ldir='S'] { shield-text-dy: 6; }
-  [ldir='NE'] { shield-text-dx: 3; shield-text-dy: -3; }
-  [ldir='SE'] { shield-text-dx: 3; shield-text-dy: 3; }
-  [ldir='SW'] { shield-text-dx: -3; shield-text-dy: 3; }
-  [ldir='NW'] { shield-text-dx: -3; shield-text-dy: -3; }
-
-  [zoom>=6] { shield-size: 14; }
-
-  // Emphasize major cities.
-  [scalerank<=6] { shield-size: 14; }
-  [zoom>=6][scalerank<=6] { shield-size: 16; } 
-}
-
-// Gradually replace shields with regular text labels.
-#place_label[type='city'][localrank=1][zoom>=9],
-#place_label[type='city'][zoom>=10] {
-  text-name: @name;
-  text-face-name: @sans;
-  text-size: 16;
-  text-fill: @text;
-  text-halo-fill: @land;
-  text-halo-radius: 1;
-  text-min-distance: 4;
-  text-wrap-width: 80;
-  [scalerank<=3] { 
-    text-fill: @text;
-    text-size: 20;
-  } 
-}
-
-// Mid priority place labels //
-#place_label[type='town'][localrank<=2][zoom>=10],
-#place_label[type='village'][localrank<=2][zoom>=12],
-#place_label[type='hamlet'][localrank<=2][zoom>=13],
-#place_label[type='town'][zoom>=14],
-#place_label[type='village'][zoom>=14],
-#place_label[type='hamlet'][zoom>=14] { 
-  text-name: @name;
-  text-face-name: @sans;
-  text-size: 14;
-  text-fill: @text;
-  text-halo-fill: @land;
-  text-halo-radius: 2;
-  text-min-distance: 4;
-  text-wrap-width: 80;
-  [zoom>=12] { 
-    text-size: 16;
-    text-fill: @text;
+    [ldir='E'] { shield-text-dx: 5; }
+    [ldir='W'] { shield-text-dx: -5; }
+    [ldir='N'] { shield-text-dy: -5; }
+    [ldir='S'] { shield-text-dy: 5; }
+    [ldir='NE'] { shield-text-dx: 4; shield-text-dy: -4; }
+    [ldir='SE'] { shield-text-dx: 4; shield-text-dy: 4; }
+    [ldir='SW'] { shield-text-dx: -4; shield-text-dy: 4; }
+    [ldir='NW'] { shield-text-dx: -4; shield-text-dy: -4; }
   }
 }
 
-// Low priority place labels //
-#place_label[type='suburb'][localrank<=2][zoom>=12],
-#place_label[type='neighbourhood'][localrank<=2][zoom>=13],
-#place_label[type='suburb'][zoom>=14],
-#place_label[type='neighbourhood'][zoom>=15] { 
+#place_label[zoom>=8][localrank<=3] {
   text-name: @name;
   text-face-name: @sans;
-  text-size: 14;
+  text-wrap-width: 80;
+  text-wrap-before: true;
   text-fill: @text;
-  text-halo-fill: @land;
+  text-halo-fill: @fill1;
   text-halo-radius: 2;
-  text-min-distance: 4;
-  text-wrap-width: 60;
+  text-halo-rasterizer: fast;
+  text-size: 10;
+  text-line-spacing:-2;
+  text-margin:25;
+
+  // Cities
+  [type='city'][zoom>=8][zoom<=15] {
+  	text-face-name: @sans_md;
+    text-size: 15;
+    text-line-spacing:-7;
+
+    [zoom>=10] { 
+      text-size: 17;
+      text-wrap-width: 140;
+    }
+    [zoom>=12] { 
+      text-size: 20;
+      text-wrap-width: 180;
+    }
+    // Hide at largest scales:
+    [zoom>=16] { text-name: "''"; }
+  }
+  
+  // Towns
+  [type='town'] {
+    text-size: 12;    
+    text-halo-fill: @fill1;
+    text-halo-radius: 1.9;
+    [zoom>=12] { text-size: 12; }
+    [zoom>=14] { text-size: 16; }
+    [zoom>=16] { text-size: 22; }
+    // Hide at largest scales:
+    [zoom>=18] { text-name: "''"; }
+  }
+  
+  // Villages and suburbs
+  [type='village'] {
+    text-size: 12;    
+    text-halo-fill: @fill1;
+    text-halo-radius: 1.9;
+    [zoom>=12] { text-size: 10; }
+    [zoom>=14] { text-size: 14; }
+    [zoom>=16] { text-size: 18; }
+  }
+  [type='hamlet'],
+  [type='suburb'],
+  [type='neighbourhood'] {
+    text-fill: @fill3;
+    text-face-name:	@sans_it;
+    text-transform: none;
+    text-margin:50;
+    text-halo-radius: 2;
+    text-character-spacing: 0.5;
+    text-size: 12;
+    [zoom>=14] { text-size: 14; }
+    [zoom>=15] { text-size: 16; text-character-spacing: 1; }
+    [zoom>=16] { text-size: 18; text-character-spacing: 2; }
+    [zoom>=18] { text-size: 24; text-character-spacing: 3; }
+  }
 }
 
 // Road labels
 #road_label[len>2000][zoom>=12],
 #road_label[len>1000][zoom>=15] { 
   text-placement: line;
-  text-transform: uppercase;
   text-face-name: @sans;
   text-name: @name;
   text-size: 9;
@@ -173,7 +158,7 @@
 // Water labels
 #marine_label { 
   text-name: @name;
-  text-face-name: @sans_bold;
+  text-face-name: @sans_bd;
   text-fill: @text;
   text-size: 12;
   text-halo-fill: @water;
@@ -191,7 +176,7 @@
   [zoom>=16][area>10000],
   [zoom>=17] {
     text-name: @name;
-    text-face-name: @sans_bold;
+    text-face-name: @sans_bd;
     text-fill: @text;
     text-size: 12;
     text-halo-fill: @water;
@@ -206,7 +191,7 @@
 #waterway_label[type='canal'][zoom>=14],
 #waterway_label[type='stream'][zoom>=15] { 
   text-name: @name;
-  text-face-name: @sans_bold;
+  text-face-name: @sans_bd;
   text-fill: @text;
   text-min-distance: 60;
   text-size: 10;
@@ -224,14 +209,14 @@
 #poi_label[maki='rail'][scalerank<=2],
 #poi_label[maki='school'][scalerank<=2],
 #poi_label[scalerank='hospital'][scalerank<=2] { 
-  text-face-name: @sans_bold;
+  text-face-name: @sans_bdit;
   text-allow-overlap: false;
   text-name: @name;
   text-size: 9;
   text-line-spacing: -2;
   text-min-distance: 50;
   text-wrap-width: 60;
-  text-halo-fill: @land;
+  text-halo-fill: @fill1;
   text-halo-radius: 1;
   text-fill: @text;
 }
