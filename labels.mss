@@ -1,5 +1,5 @@
 // Country labels //
-#country_label[zoom>=3] {
+#country_label[zoom>=2][zoom<=10] {
   text-name: @name;
   text-face-name: @sans_bold;
   text-fill: @text;
@@ -7,6 +7,7 @@
   text-halo-fill: @land;
   text-halo-radius: 1;
   text-wrap-width: 50;
+  [zoom=2] { text-face-name: @sans; }
   [zoom>=3][scalerank=1],
   [zoom>=4][scalerank=2],
   [zoom>=5][scalerank=3],
@@ -26,21 +27,27 @@
   }
 }
 
-#country_label_line { 
-  line-color: @text;
-  line-dasharray: 3,3;
-  line-width: 1;
-}
-
 // State labels //
 #state_label { 
-  text-name: @name;
+  text-name: [abbr];
   text-face-name: @sans;
   text-fill: @text;
   text-size: 12;
   text-halo-fill: @land;
   text-halo-radius: 1;
   text-wrap-width: 50;
+  [zoom>=4][area>100000],
+  [zoom>=5][area>50000],
+  [zoom>=6][area>10000],
+  [zoom>=7][area<=10000] {
+    text-name: [abbr];
+  }
+  [zoom>=5][area>100000],
+  [zoom>=6][area>50000],
+  [zoom>=7][area>10000],
+  [zoom>=8][area<=10000] {
+    text-name: @name;
+  }
 }
 
 // Display capital cities alongside stars.
@@ -48,7 +55,7 @@
   shield-file: url("star.svg");
   shield-name: @name;
   shield-face-name: @sans;
-  shield-size: 14;
+  shield-size: 12;
   shield-fill: @text;
   shield-halo-fill: @land;
   shield-halo-radius: 1;
@@ -69,11 +76,7 @@
 }
 
 // Display low zoom cities alongside points.
-#place_label[type='city'][localrank=1][zoom>=4][zoom<9],
-#place_label[type='city'][localrank=2][zoom>=5][zoom<10],
-#place_label[type='city'][localrank=3][zoom>=7][zoom<10],
-#place_label[type='city'][localrank>=4][localrank>9][zoom>=8][zoom<10],
-#place_label[type='town'][localrank<=1][zoom>=9][zoom<10] {
+#place_label[type='city'][localrank=1][zoom>=4][zoom<9] {
   shield-name: @name;
   shield-face-name: @sans;
   shield-size: 12;
@@ -103,11 +106,10 @@
 }
 
 // Gradually replace shields with regular text labels.
-#place_label[type='city'][localrank=1][zoom>=9],
-#place_label[type='city'][zoom>=10] {
+#place_label[type='city'][localrank=1][zoom>=9] {
   text-name: @name;
   text-face-name: @sans;
-  text-size: 16;
+  text-size: 14;
   text-fill: @text;
   text-halo-fill: @land;
   text-halo-radius: 1;
@@ -120,15 +122,15 @@
 }
 
 // Mid priority place labels //
-#place_label[type='town'][localrank<=2][zoom>=10],
-#place_label[type='village'][localrank<=2][zoom>=12],
-#place_label[type='hamlet'][localrank<=2][zoom>=13],
-#place_label[type='town'][zoom>=14],
-#place_label[type='village'][zoom>=14],
-#place_label[type='hamlet'][zoom>=14] { 
+#place_label[type='town'][localrank<=1][zoom>=10],
+#place_label[type='village'][localrank<=1][zoom>=12],
+#place_label[type='hamlet'][localrank<=1][zoom>=13],
+#place_label[type='town'][localrank<=1][zoom>=14],
+#place_label[type='village'][localrank=1][zoom>=14],
+#place_label[type='hamlet'][localrank<=1][zoom>=14] { 
   text-name: @name;
   text-face-name: @sans;
-  text-size: 14;
+  text-size: 13;
   text-fill: @text;
   text-halo-fill: @land;
   text-halo-radius: 2;
@@ -141,10 +143,10 @@
 }
 
 // Low priority place labels //
-#place_label[type='suburb'][localrank<=2][zoom>=12],
-#place_label[type='neighbourhood'][localrank<=2][zoom>=13],
-#place_label[type='suburb'][zoom>=14],
-#place_label[type='neighbourhood'][zoom>=15] { 
+#place_label[type='suburb'][localrank<=1][zoom>=12],
+#place_label[type='neighbourhood'][localrank<=1][zoom>=13],
+#place_label[type='suburb'][localrank=1][zoom>=14],
+#place_label[type='neighbourhood'][localrank=1][zoom>=15] { 
   text-name: @name;
   text-face-name: @sans;
   text-size: 14;
