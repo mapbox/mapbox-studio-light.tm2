@@ -19,7 +19,7 @@ interactivity_layer: ''
 layers: null
 maxzoom: 22
 minzoom: 0
-name: Mapbox Light (v6)
+name: Mapbox Light
 source: "mapbox:///mapbox.mapbox-streets-v6"
 styles: 
   - style.mss
