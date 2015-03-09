@@ -1234,146 +1234,207 @@
 
 <Style name="country_label" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([scalerank] = 3)</Filter>
-    <TextSymbolizer size="20" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <Filter>([scalerank] &gt;= 6)</Filter>
+    <TextSymbolizer size="16" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([scalerank] &gt;= 6)</Filter>
+    <TextSymbolizer size="14" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([scalerank] &gt;= 6)</Filter>
+    <TextSymbolizer size="12" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([scalerank] &gt;= 6)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" placement="point" size="10" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([scalerank] = 5)</Filter>
+    <TextSymbolizer size="18" wrap-width="120" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([scalerank] = 5)</Filter>
+    <TextSymbolizer size="16" wrap-width="90" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([scalerank] = 5)</Filter>
+    <TextSymbolizer size="14" wrap-width="60" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([scalerank] = 5)</Filter>
+    <TextSymbolizer size="13" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([scalerank] = 5)</Filter>
+    <TextSymbolizer size="11" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([scalerank] = 5)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" placement="point" size="10" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([scalerank] = 4)</Filter>
+    <TextSymbolizer size="20" wrap-width="120" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([scalerank] = 4)</Filter>
+    <TextSymbolizer size="18" wrap-width="120" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([scalerank] = 4)</Filter>
+    <TextSymbolizer size="16" wrap-width="90" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([scalerank] = 4)</Filter>
+    <TextSymbolizer size="15" wrap-width="60" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([scalerank] = 4)</Filter>
+    <TextSymbolizer size="13" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([scalerank] = 4)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" placement="point" size="10" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([scalerank] = 3)</Filter>
+    <TextSymbolizer size="20" wrap-width="120" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([scalerank] = 3)</Filter>
-    <TextSymbolizer size="16" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="18" wrap-width="60" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([scalerank] = 3)</Filter>
+    <TextSymbolizer size="17" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
     <Filter>([scalerank] = 3)</Filter>
-    <TextSymbolizer size="14" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000000</MaxScaleDenominator>
-    <MinScaleDenominator>100000000</MinScaleDenominator>
-    <Filter>([scalerank] = 3)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000000</MaxScaleDenominator>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([scalerank] = 3)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([scalerank] &gt; 3)</Filter>
-    <TextSymbolizer size="20" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([scalerank] &gt; 3)</Filter>
-    <TextSymbolizer size="16" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([scalerank] &gt; 3)</Filter>
-    <TextSymbolizer size="14" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000000</MaxScaleDenominator>
-    <MinScaleDenominator>100000000</MinScaleDenominator>
-    <Filter>([scalerank] &gt; 3)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([scalerank] &gt; 3)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([scalerank] &gt;= 3)</Filter>
-    <TextSymbolizer size="20" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000000</MaxScaleDenominator>
-    <MinScaleDenominator>100000000</MinScaleDenominator>
-    <Filter>([scalerank] &gt;= 3)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([scalerank] &gt;= 3)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([scalerank] = 1)</Filter>
-    <TextSymbolizer size="20" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="15" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([scalerank] = 1)</Filter>
-    <TextSymbolizer size="16" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([scalerank] = 3)</Filter>
+    <TextSymbolizer size="11" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>50000000</MinScaleDenominator>
-    <Filter>([scalerank] = 1)</Filter>
-    <TextSymbolizer size="14" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <Filter>([scalerank] = 3)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" placement="point" size="10" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[code]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000000</MaxScaleDenominator>
     <MinScaleDenominator>100000000</MinScaleDenominator>
-    <Filter>([scalerank] = 1)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <Filter>([scalerank] = 3)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" placement="point" size="10" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([scalerank] = 2)</Filter>
-    <TextSymbolizer size="20" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="20" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
     <Filter>([scalerank] = 2)</Filter>
-    <TextSymbolizer size="16" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="17" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([scalerank] = 2)</Filter>
-    <TextSymbolizer size="14" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000000</MaxScaleDenominator>
-    <MinScaleDenominator>100000000</MinScaleDenominator>
-    <Filter>([scalerank] = 2)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="13" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([scalerank] = 2)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="11" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000000</MaxScaleDenominator>
     <MinScaleDenominator>100000000</MinScaleDenominator>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <Filter>([scalerank] = 2)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" placement="point" size="10" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[code]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([scalerank] = 1)</Filter>
+    <TextSymbolizer size="20" wrap-width="120" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([scalerank] = 1)</Filter>
+    <TextSymbolizer size="20" wrap-width="120" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([scalerank] = 1)</Filter>
+    <TextSymbolizer size="14" wrap-width="90" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([scalerank] = 1)</Filter>
+    <TextSymbolizer size="12" wrap-width="60" face-name="Arial Unicode MS Bold" placement="point" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000000</MaxScaleDenominator>
+    <MinScaleDenominator>100000000</MinScaleDenominator>
+    <Filter>([scalerank] = 1)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" placement="point" size="10" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" placement="point" size="10" fill="#777777" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" wrap-width="20" wrap-before="true" line-spacing="-3" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="country_label"
@@ -1383,277 +1444,277 @@
 <Style name="marine_label" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 3)</Filter>
-    <TextSymbolizer size="16" character-spacing="8" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 3)</Filter>
+    <TextSymbolizer size="16" character-spacing="8" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 3)</Filter>
-    <TextSymbolizer size="14" character-spacing="4" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 3)</Filter>
+    <TextSymbolizer size="14" character-spacing="4" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 3)</Filter>
-    <TextSymbolizer size="12" character-spacing="2" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 3)</Filter>
+    <TextSymbolizer size="12" character-spacing="2" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 3)</Filter>
-    <TextSymbolizer size="11" character-spacing="1" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 3)</Filter>
+    <TextSymbolizer size="11" character-spacing="1" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000000</MaxScaleDenominator>
     <MinScaleDenominator>50000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 3)</Filter>
-    <TextSymbolizer placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 3)</Filter>
+    <TextSymbolizer placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 2)</Filter>
+    <TextSymbolizer size="16" character-spacing="8" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 2)</Filter>
+    <TextSymbolizer size="14" character-spacing="4" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 2)</Filter>
+    <TextSymbolizer size="12" character-spacing="2" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 2)</Filter>
+    <TextSymbolizer size="11" character-spacing="1" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000000</MaxScaleDenominator>
+    <MinScaleDenominator>100000000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 2)</Filter>
+    <TextSymbolizer placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 3)</Filter>
-    <TextSymbolizer size="16" character-spacing="8" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 3)</Filter>
+    <TextSymbolizer size="16" character-spacing="8" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 3)</Filter>
-    <TextSymbolizer size="14" character-spacing="4" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 3)</Filter>
+    <TextSymbolizer size="14" character-spacing="4" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 3)</Filter>
-    <TextSymbolizer size="12" character-spacing="2" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 3)</Filter>
+    <TextSymbolizer size="12" character-spacing="2" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 3)</Filter>
-    <TextSymbolizer size="11" character-spacing="1" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 3)</Filter>
+    <TextSymbolizer size="11" character-spacing="1" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000000</MaxScaleDenominator>
     <MinScaleDenominator>50000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 3)</Filter>
-    <TextSymbolizer placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 1)</Filter>
-    <TextSymbolizer size="16" character-spacing="8" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 1)</Filter>
-    <TextSymbolizer size="14" character-spacing="4" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000000</MaxScaleDenominator>
-    <MinScaleDenominator>50000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 1)</Filter>
-    <TextSymbolizer size="12" character-spacing="2" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000000</MaxScaleDenominator>
-    <MinScaleDenominator>100000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 1)</Filter>
-    <TextSymbolizer size="11" character-spacing="1" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 1)</Filter>
-    <TextSymbolizer size="16" character-spacing="8" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 1)</Filter>
-    <TextSymbolizer size="14" character-spacing="4" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000000</MaxScaleDenominator>
-    <MinScaleDenominator>50000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 1)</Filter>
-    <TextSymbolizer size="12" character-spacing="2" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000000</MaxScaleDenominator>
-    <MinScaleDenominator>100000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 1)</Filter>
-    <TextSymbolizer size="11" character-spacing="1" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 2)</Filter>
-    <TextSymbolizer size="16" character-spacing="8" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 2)</Filter>
-    <TextSymbolizer size="14" character-spacing="4" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 2)</Filter>
-    <TextSymbolizer size="12" character-spacing="2" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000000</MaxScaleDenominator>
-    <MinScaleDenominator>50000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 2)</Filter>
-    <TextSymbolizer size="11" character-spacing="1" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000000</MaxScaleDenominator>
-    <MinScaleDenominator>100000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 2)</Filter>
-    <TextSymbolizer placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 3)</Filter>
+    <TextSymbolizer placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 2)</Filter>
-    <TextSymbolizer size="16" character-spacing="8" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="16" character-spacing="8" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 2)</Filter>
-    <TextSymbolizer size="14" character-spacing="4" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="14" character-spacing="4" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 2)</Filter>
-    <TextSymbolizer size="12" character-spacing="2" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="12" character-spacing="2" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 2)</Filter>
-    <TextSymbolizer size="11" character-spacing="1" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="11" character-spacing="1" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000000</MaxScaleDenominator>
     <MinScaleDenominator>100000000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 2)</Filter>
-    <TextSymbolizer placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 1)</Filter>
+    <TextSymbolizer size="16" character-spacing="8" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 1)</Filter>
+    <TextSymbolizer size="14" character-spacing="4" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 1)</Filter>
+    <TextSymbolizer size="12" character-spacing="2" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000000</MaxScaleDenominator>
+    <MinScaleDenominator>100000000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 1)</Filter>
+    <TextSymbolizer size="11" character-spacing="1" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 1)</Filter>
+    <TextSymbolizer size="16" character-spacing="8" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 1)</Filter>
+    <TextSymbolizer size="14" character-spacing="4" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 1)</Filter>
+    <TextSymbolizer size="12" character-spacing="2" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000000</MaxScaleDenominator>
+    <MinScaleDenominator>100000000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 1)</Filter>
+    <TextSymbolizer size="11" character-spacing="1" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 4)</Filter>
+    <TextSymbolizer size="12" character-spacing="2" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 4)</Filter>
+    <TextSymbolizer size="11" character-spacing="1" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 4)</Filter>
+    <TextSymbolizer placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 6)</Filter>
-    <TextSymbolizer size="12" character-spacing="2" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="12" character-spacing="2" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 6)</Filter>
-    <TextSymbolizer size="11" character-spacing="1" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="11" character-spacing="1" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 6)</Filter>
-    <TextSymbolizer placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 5)</Filter>
+    <TextSymbolizer size="12" character-spacing="2" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 5)</Filter>
+    <TextSymbolizer size="11" character-spacing="1" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 5)</Filter>
+    <TextSymbolizer placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 5)</Filter>
-    <TextSymbolizer size="12" character-spacing="2" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="12" character-spacing="2" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 5)</Filter>
-    <TextSymbolizer size="11" character-spacing="1" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="11" character-spacing="1" placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 5)</Filter>
-    <TextSymbolizer placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 4)</Filter>
-    <TextSymbolizer size="12" character-spacing="2" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="12" character-spacing="2" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 4)</Filter>
-    <TextSymbolizer size="11" character-spacing="1" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="11" character-spacing="1" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 4)</Filter>
-    <TextSymbolizer placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 4)</Filter>
-    <TextSymbolizer size="12" character-spacing="2" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 4)</Filter>
-    <TextSymbolizer size="11" character-spacing="1" placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000000</MaxScaleDenominator>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 4)</Filter>
-    <TextSymbolizer placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 6)</Filter>
-    <TextSymbolizer size="12" character-spacing="2" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="12" character-spacing="2" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 6)</Filter>
-    <TextSymbolizer size="11" character-spacing="1" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="11" character-spacing="1" placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 6)</Filter>
-    <TextSymbolizer placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 5)</Filter>
-    <TextSymbolizer size="12" character-spacing="2" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 5)</Filter>
-    <TextSymbolizer size="11" character-spacing="1" placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000000</MaxScaleDenominator>
-    <MinScaleDenominator>12500000</MinScaleDenominator>
-    <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 5)</Filter>
-    <TextSymbolizer placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000000</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2)</Filter>
-    <TextSymbolizer placement="line" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placement="line" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000000</MaxScaleDenominator>
     <Filter>([mapnik::geometry_type] = 1)</Filter>
-    <TextSymbolizer placement="point" wrap-width="30" face-name="Arial Unicode MS Bold" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer placement="point" wrap-width="30" face-name="Arial Unicode MS Regular" fill="#777777" halo-fill="#d1d1d1" halo-radius="1" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="marine_label"
@@ -1662,83 +1723,138 @@
 
 <Style name="state_label" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([area] &lt;= 10000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([area] &lt;= 10000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[abbr]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>6500000</MinScaleDenominator>
-    <Filter>([area] &lt;= 10000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[abbr]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([area] &gt; 100000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="18" character-spacing="2" halo-radius="2" wrap-width="100" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([area] &gt; 100000)</Filter>
+    <TextSymbolizer size="18" character-spacing="3" wrap-width="60" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([area] &gt; 100000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="14" wrap-width="40" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([area] &gt; 100000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[abbr]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" size="10" ><![CDATA[[abbr]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MinScaleDenominator>50000000</MinScaleDenominator>
-    <Filter>([area] &gt; 100000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[abbr]]]></TextSymbolizer>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([area] &gt; 50000)</Filter>
+    <TextSymbolizer size="18" character-spacing="2" halo-radius="2" wrap-width="100" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([area] &gt; 50000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="16" character-spacing="1" wrap-width="60" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([area] &gt; 50000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer size="14" wrap-width="40" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
     <Filter>([area] &gt; 50000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[abbr]]]></TextSymbolizer>
+    <TextSymbolizer size="14" wrap-width="40" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[abbr]]]></TextSymbolizer>
   </Rule>
   <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([area] &gt; 50000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[abbr]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[name_en]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" size="10" ><![CDATA[[abbr]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[abbr]]]></TextSymbolizer>
+    <TextSymbolizer size="12" wrap-width="40" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[abbr]]]></TextSymbolizer>
   </Rule>
   <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
     <Filter>([area] &gt; 10000)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[abbr]]]></TextSymbolizer>
+    <TextSymbolizer size="12" wrap-width="40" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[abbr]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#777777" size="12" halo-fill="#eeeeee" halo-radius="1" wrap-width="50" ><![CDATA[[abbr]]]></TextSymbolizer>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([area] &gt; 10000)</Filter>
+    <TextSymbolizer halo-radius="2" size="16" character-spacing="2" wrap-width="100" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([area] &gt; 10000)</Filter>
+    <TextSymbolizer size="14" wrap-width="60" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([area] &gt; 10000)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" size="10" ><![CDATA[[abbr]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([area] &lt;= 10000)</Filter>
+    <TextSymbolizer halo-radius="2" size="16" character-spacing="2" wrap-width="100" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([area] &lt;= 10000)</Filter>
+    <TextSymbolizer size="14" wrap-width="60" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([area] &lt;= 10000)</Filter>
+    <TextSymbolizer size="14" wrap-width="60" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[abbr]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([area] &lt;= 10000)</Filter>
+    <TextSymbolizer wrap-width="40" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" size="10" ><![CDATA[[abbr]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([area] &lt;= 10000)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" size="10" ><![CDATA[[abbr]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <TextSymbolizer halo-radius="2" size="16" character-spacing="2" wrap-width="100" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-rasterizer="fast" ><![CDATA[[abbr]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <TextSymbolizer size="14" wrap-width="60" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" ><![CDATA[[abbr]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <TextSymbolizer wrap-width="40" face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" size="10" ><![CDATA[[abbr]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="point" fill="#bbbbbb" halo-fill="#eeeeee" halo-radius="1" halo-rasterizer="fast" size="10" ><![CDATA[[abbr]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="state_label"
@@ -2218,6 +2334,17 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'village') and ([localrank] = 1)</Filter>
+    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'village') and ([localrank] = 1)</Filter>
+    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([type] = 'town') and ([localrank] &lt;= 1)</Filter>
     <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
@@ -2234,31 +2361,9 @@
     <TextSymbolizer face-name="Arial Unicode MS Regular" size="13" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'village') and ([localrank] = 1)</Filter>
-    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'village') and ([localrank] = 1)</Filter>
-    <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <Filter>([type] = 'village') and ([localrank] &lt;= 1)</Filter>
     <TextSymbolizer size="16" fill="#777777" face-name="Arial Unicode MS Regular" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="80" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([type] = 'suburb') and ([localrank] = 1)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="60" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([type] = 'suburb') and ([localrank] = 1)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="60" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
@@ -2272,13 +2377,24 @@
     <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="60" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([type] = 'suburb') and ([localrank] = 1)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="60" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([type] = 'suburb') and ([localrank] &lt;= 1)</Filter>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'suburb') and ([localrank] = 1)</Filter>
     <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="60" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([type] = 'neighbourhood') and ([localrank] &lt;= 1)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="60" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([type] = 'suburb') and ([localrank] &lt;= 1)</Filter>
     <TextSymbolizer face-name="Arial Unicode MS Regular" size="14" fill="#777777" halo-fill="#eeeeee" halo-radius="2" minimum-distance="4" wrap-width="60" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
@@ -2434,15 +2550,11 @@
     <TextSymbolizer face-name="Arial Unicode MS Bold" allow-overlap="false" size="9" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
+    <Filter>([maki] = 'school') and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" allow-overlap="false" size="9" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
     <Filter>([maki] = 'rail') and ([scalerank] &lt;= 2)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" allow-overlap="false" size="9" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <Filter>([maki] = 'airfield') and ([scalerank] &lt;= 2)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Bold" allow-overlap="false" size="9" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <Filter>([maki] = 'airport') and ([scalerank] &lt;= 2)</Filter>
     <TextSymbolizer face-name="Arial Unicode MS Bold" allow-overlap="false" size="9" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -2450,7 +2562,11 @@
     <TextSymbolizer face-name="Arial Unicode MS Bold" allow-overlap="false" size="9" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <Filter>([maki] = 'school') and ([scalerank] &lt;= 2)</Filter>
+    <Filter>([maki] = 'airport') and ([scalerank] &lt;= 2)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Bold" allow-overlap="false" size="9" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([maki] = 'airfield') and ([scalerank] &lt;= 2)</Filter>
     <TextSymbolizer face-name="Arial Unicode MS Bold" allow-overlap="false" size="9" line-spacing="-2" minimum-distance="50" wrap-width="60" halo-fill="#eeeeee" halo-radius="1" fill="#777777" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>
@@ -2494,8 +2610,8 @@
 
 <Style name="waterway_label" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([type] = 'stream')</Filter>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([type] = 'river')</Filter>
     <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" minimum-distance="60" size="10" halo-fill="#d1d1d1" halo-radius="1" wrap-before="true" avoid-edges="true" placement="line" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
@@ -2504,8 +2620,8 @@
     <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" minimum-distance="60" size="10" halo-fill="#d1d1d1" halo-radius="1" wrap-before="true" avoid-edges="true" placement="line" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <Filter>([type] = 'river')</Filter>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <Filter>([type] = 'stream')</Filter>
     <TextSymbolizer face-name="Arial Unicode MS Bold" fill="#777777" minimum-distance="60" size="10" halo-fill="#d1d1d1" halo-radius="1" wrap-before="true" avoid-edges="true" placement="line" ><![CDATA[[name_en]]]></TextSymbolizer>
   </Rule>
 </Style>

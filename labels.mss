@@ -2,40 +2,67 @@
 #country_label[zoom>=2][zoom<=10] {
   text-name: @name;
   text-face-name: @sans_bold;
+  text-placement: point;
+  text-size: 10;
   text-fill: @text;
-  text-size: 12;
   text-halo-fill: @land;
   text-halo-radius: 1;
-  text-wrap-width: 50;
-  [zoom=2] { text-face-name: @sans; }
-  [zoom>=3][scalerank=1],
-  [zoom>=4][scalerank=2],
-  [zoom>=5][scalerank=3],
-  [zoom>=6][scalerank>3] {
-    text-size: 14;
+  text-halo-rasterizer: fast;
+  text-wrap-width: 20;
+  text-wrap-before: true;
+  text-line-spacing: -3;
+  [scalerank=1] {
+    [zoom=3]  { text-size: 12; text-wrap-width: 60; }
+    [zoom=4]  { text-size: 14; text-wrap-width: 90; }
+    [zoom=5]  { text-size: 20; text-wrap-width: 120; }
+    [zoom>=6] { text-size: 20; text-wrap-width: 120; }
   }
-  [zoom>=4][scalerank=1],
-  [zoom>=5][scalerank=2],
-  [zoom>=6][scalerank=3],
-  [zoom>=7][scalerank>3] {
-    text-size: 16;
+  [scalerank=2] {
+    [zoom=2]  { text-name: [code]; }
+    [zoom=3]  { text-size: 11; }
+    [zoom=4]  { text-size: 13; }
+    [zoom=5]  { text-size: 17; }
+    [zoom>=6] { text-size: 20; }
   }
-  [zoom>=6][scalerank=1],
-  [zoom>=7][scalerank=2],
-  [zoom>=8][scalerank>=3] {
-    text-size: 20;
+  [scalerank=3] {
+    [zoom=3]  { text-name: [code]; }
+    [zoom=4]  { text-size: 11; }
+    [zoom=5]  { text-size: 15; }
+    [zoom=6]  { text-size: 17; }
+    [zoom=7]  { text-size: 18; text-wrap-width: 60; }
+    [zoom>=8] { text-size: 20; text-wrap-width: 120; }
+  }
+  [scalerank=4] {
+    [zoom=5] { text-size: 13; }
+    [zoom=6] { text-size: 15; text-wrap-width: 60  }
+    [zoom=7] { text-size: 16; text-wrap-width: 90; }
+    [zoom=8] { text-size: 18; text-wrap-width: 120; }
+    [zoom>=9] { text-size: 20; text-wrap-width: 120; }
+  }
+  [scalerank=5] {
+    [zoom=5] { text-size: 11; }
+    [zoom=6] { text-size: 13; }
+    [zoom=7] { text-size: 14; text-wrap-width: 60; }
+    [zoom=8] { text-size: 16; text-wrap-width: 90; }
+    [zoom>=9] { text-size: 18; text-wrap-width: 120; }
+  }
+  [scalerank>=6] {
+    [zoom=7] { text-size: 12; }
+    [zoom=8] { text-size: 14; }
+    [zoom>=9] { text-size: 16; }
   }
 }
 
 // State labels //
-#state_label { 
+#state_label[zoom>=4][zoom<=10] {
   text-name: [abbr];
   text-face-name: @sans;
-  text-fill: @text;
-  text-size: 12;
+  text-placement: point;
+  text-fill: @fill2;
   text-halo-fill: @land;
   text-halo-radius: 1;
-  text-wrap-width: 50;
+  text-halo-rasterizer: fast;
+  text-size: 10;
   [zoom>=4][area>100000],
   [zoom>=5][area>50000],
   [zoom>=6][area>10000],
@@ -47,6 +74,24 @@
   [zoom>=7][area>10000],
   [zoom>=8][area<=10000] {
     text-name: @name;
+  }
+  [zoom>=5][zoom<=6] {
+    [area>10000] { text-size: 12; }
+    [area>50000] { text-size: 14; }
+    text-wrap-width: 40;
+  }
+  [zoom>=7][zoom<=8] {
+    text-size: 14;
+    [area>50000] { text-size: 16; text-character-spacing: 1; }
+    [area>100000] { text-size: 18; text-character-spacing: 3; }
+    text-wrap-width: 60;
+  }
+  [zoom>=9][zoom<=10] {
+    text-halo-radius: 2;
+    text-size: 16;
+    text-character-spacing: 2;
+    [area>50000] { text-size: 18; text-character-spacing: 2; }
+    text-wrap-width: 100;
   }
 }
 
@@ -177,7 +222,7 @@
 #marine_label[zoom>=2]["mapnik::geometry_type"=1],
 #marine_label[zoom>=2]["mapnik::geometry_type"=2] {
   text-name: @name;
-  text-face-name: @sans_bold;
+  text-face-name: @sans;
   text-fill: @text;
   text-halo-fill: @water;
   text-halo-radius: 1;
