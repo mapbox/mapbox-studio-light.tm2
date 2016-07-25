@@ -60,7 +60,7 @@
   ['mapnik::geometry_type'=2] {
     line-color: @land;
     line-width: 1;
-    [class='motorway_link'] { 
+    [class='motorway'] { 
       [zoom>=11] { line-width: 2 + @case; }
       [zoom>=12] { line-width: 3 + @case; }
       [zoom>=14] { line-width: 4 + @case; }
