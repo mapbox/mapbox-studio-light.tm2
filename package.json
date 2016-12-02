@@ -2,5 +2,9 @@
   "name": "@mapbox/mapbox-studio-light",
   "version": "2.1.1",
   "description": "Default style project for Mapbox Studio.",
-  "main": "./package.json"
+  "main": "./package.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mapbox/mapbox-studio-light.tm2.git"
+  }
 }
